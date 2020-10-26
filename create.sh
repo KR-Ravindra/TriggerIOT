@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 apt update
 apt install uuid-runtime -y
