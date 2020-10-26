@@ -3,7 +3,7 @@
 apt update
 apt install uuid-runtime -y
 jobID=$(uuidgen)
-
+echo $jobID
 aws configure set default.region us-east-1
 aws iot create-job  \
       --job-id $jobID  \
