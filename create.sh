@@ -5,6 +5,7 @@ apt install uuid-runtime -y
 jobID=$(uuidgen)
 echo $jobID
 aws configure set default.region us-east-1
+aws iot list-jobs
 aws iot create-job  \
       --job-id $jobID  \
       --targets arn:aws:iot:us-east-1:629707839273:thing/UV-ARDEN-001 \
