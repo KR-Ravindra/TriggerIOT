@@ -1,6 +1,7 @@
 #!/bin/bash
 
-apt install uuid-runtime
+apt update
+apt install uuid-runtime -y
 jobID=$(uuidgen)
 
 aws configure set default.region us-east-1
